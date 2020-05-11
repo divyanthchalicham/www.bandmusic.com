@@ -1,0 +1,137 @@
+<html>
+    <head>
+        
+        <style>
+            h2{
+                text-align: center;
+            }
+            
+            label {    
+                padding: 12px 12px 12px 0;    
+                display: inline-block;    
+            }  
+            
+            .row:after 
+            {    
+                content: "";    
+                display: table;    
+                clear: both;    
+            }   
+            
+            input[type=submit] ,[type=button] 
+            {    
+                background-color: rgb(37, 116, 161);    
+                color: white;    
+                padding: 12px 20px;    
+                border: none;    
+                border-radius: 4px;    
+                cursor: pointer;    
+                float: center;    
+            } 
+            
+            .que 
+            {    
+                float: left;    
+                width: 25%;    
+                margin-top: 6px;    
+            }    
+                
+            .ans 
+            {    
+                float: left;    
+                width: 55%;    
+                margin-top: 6px;    
+            }
+            
+            input[type=text], select, textarea 
+            {    
+                width: 100%;    
+                padding: 12px;    
+                border: 1px solid rgb(70, 68, 68);    
+                border-radius: 4px;    
+                resize: vertical;    
+            }    
+            
+            input[type=email], select, textarea 
+            {    
+                width: 100%;    
+                padding: 12px;    
+                border: 1px solid rgb(70, 68, 68);    
+                border-radius: 4px;   
+                resize: vertical;    
+            } 
+            
+            </style>
+            <title>FeedBack</title>
+    </head>
+    
+
+<body>
+<center>
+    <h2>FEED BACK FORM...Give Us Your Valuable Feedback</h2>
+    <form action="main page.html" onsubmit="myFunction()">
+    <div class="row">    
+        <div class="que">    
+            <label for="fname">First Name</label>    
+            </div>    
+            <div class="ans">    
+              <input type="text" id="fname" name="firstname" placeholder="Enter your first name" required>    
+            </div>    
+        </div>    
+    <div class="row">    
+        <div class="que">    
+           <label for="lname">Last Name</label>    
+        </div>    
+        <div class="ans">    
+            <input type="text" id="lname" name="lastname" placeholder="Enter your last name" required>    
+        </div>    
+    </div>    
+    <div class="row">    
+        <div class="que">    
+            <label for="email">Mail Id</label>    
+        </div>    
+        <div class="ans">    
+            <input type="email" id="email" name="mailid" placeholder="Enter your mail id" required>    
+        </div>    
+    </div>    
+    <div class="row">    
+        <div class="que">    
+            <label for="country">Country</label>    
+        </div>    
+        <div class="ans">    
+        <select id="country" name="country" required>    
+            <option value="none">Select Country</option>
+            <option value="india">India</option>     
+            <option value="australia">Australia</option>    
+            <option value="canada">Canada</option>    
+            <option value="usa">USA</option>    
+            <option value="russia">Russia</option>    
+            <option value="japan">Japan</option>       
+            <option value="china">China</option>    
+        </select>    
+        </div>    
+    </div>
+    <div class="row">    
+        <div class="que">    
+          <label for="feed_back">Feed Back</label>    
+        </div>    
+        <div class="ans">    
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>    
+        </div>    
+    </div>
+    <br>
+    <div class="row">    
+        <input type="submit" value="Submit">
+        <input type="button" value="cancel" onclick="window.location.href = 'main page.html';"> 
+          
+    </div>  
+    </form>
+    
+</center>
+<script>
+    function myFunction() {
+      alert("Thanks For Your Valuable Feedback");
+    }
+    </script>
+</body>
+</html>

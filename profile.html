@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 25px;
+  text-align:center;
+  border: 10px solid rgb(39, 6, 6);
+  background-color: black;
+}
+
+#sty{
+  font-size:17px;
+  font-weight: 600;
+  color: coral;
+  text-align: center;
+}
+
+.topnav a:hover{
+      background-color: rgb(48, 38, 38);
+      color:rgb(255, 193, 60);
+      padding:8px 13px;
+      text-decoration: none;
+}
+
+.container {
+  position: relative;
+  max-width: 2000px;
+  margin: 10px;
+  border:black;
+  border: 50px;
+}
+
+.container img {vertical-align: top;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.3); 
+  color: rgb(253, 227, 188);
+  width:100%;
+  padding: 50px;
+}
+a{
+    text-decoration: none;
+}
+h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align:center;
+  font-stretch: ultra-condensed;
+  color:rgb(170, 199, 252);
+}
+
+</style><title>My Profile</title>
+</head>
+<body>
+  <div id="sty" class="topnav">
+    <b>|</b>
+    &nbsp;
+    <a href="main page.html">Home</a>
+    &nbsp;
+    <b>|</b>
+    
+    &nbsp;
+    </div>
+<div class="container">
+  <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Notebook" style="width:100%;">
+  home
+  <div class="content">
+    <h2>My Profile</h2>
+    <div id="p1">    
+      <script type="text/javascript">
+      
+          var name=localStorage.getItem("name");
+          var use=localStorage.getItem("user_name");
+          var email=localStorage.getItem("email");
+          var ph=localStorage.getItem("ph_no");
+          document.getElementById("p1").innerHTML="<b class='normal'><br> Name:  </b>" + name + "<b class='normal'><br><br>Username:   </b>" + use + 
+          "<b class='normal'><br><br>E-Mail:   </b>" + email + "<b class='normal'><br><br>Contact Number:   </b>" + ph;
+      </script>
+      </div>
+  </div>
+  
+</div>
+</body>
+</html>

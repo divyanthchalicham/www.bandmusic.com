@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>playlist demo</title>
+    <!--  <script type="text/javascript" src="C:\Users\HP\Downloads\New folder\HTML\playlist\audio\dist\amplitude.js"></script> --> 
+        <link rel="stylesheet" type="text/css" href="playlist.css"/>
+        <link rel="stylesheet" type="text/css" href="fontawesome-free-5.13.0-web\css\all.css"/>
+    </head>
+    <body id="whole">
+   
+        
+        <script>
+               
+
+            function song(){
+              let x= document.getElementById("s1");
+              x.play();
+              let y= document.getElementById("s2");
+              y.pause();
+              let z= document.getElementById("s3");
+              z.pause();
+              document.getElementById("pic").src="manam.jpg";
+              document.getElementById("artistalbum").src="manam.jpg";
+              document.getElementById("profile").src="anuprubens.jpg";
+              document.getElementById("name").innerHTML="Anup Rubens ";
+              document.getElementById("amplitude-now-playing-title").innerHTML="MANAM";
+              document.getElementById("amplitude-now-playing-artist").innerHTML="Anup Rubens ";
+              
+            }
+            function song1(){
+                let x= document.getElementById("s2");
+              x.play();
+              let y= document.getElementById("s1");
+              y.pause();
+              let z= document.getElementById("s3");
+              z.pause();
+              document.getElementById("pic").src="nani.jpg";
+              document.getElementById("artistalbum").src="nani.jpg";
+              document.getElementById("profile").src="anirudhravichander.jpg";
+              document.getElementById("name").innerHTML="Anirudh Ravichandran";
+              document.getElementById("amplitude-now-playing-title").innerHTML="Nanis Gang Leader";
+              document.getElementById("amplitude-now-playing-artist").innerHTML="Anirudh Ravichandran";
+             
+            }
+            function song2(){
+                let x= document.getElementById("s3");
+              x.play();
+              let y= document.getElementById("s1");
+              y.pause();
+              let z= document.getElementById("s2");
+              z.pause();
+              document.getElementById("pic").src="dhruva.png";
+              document.getElementById("artistalbum").src="dhruva.png";
+              document.getElementById("name").innerHTML="Amit mishra";
+              document.getElementById("profile").src="amitmishra.jpg";
+              document.getElementById("amplitude-now-playing-title").innerHTML="Dhruva";
+              document.getElementById("amplitude-now-playing-artist").innerHTML="Amitmishra";
+              
+            }
+            function stop(){
+                let x= document.getElementById("s1");
+              x.pause();
+              let y= document.getElementById("s2");
+              y.pause();
+              let z= document.getElementById("s3");
+              z.pause();
+            }
+            function profileopen(){
+
+document.getElementById("artistprofile").style.zIndex="1"
+}
+function profileclose(){
+
+document.getElementById("artistprofile").style.zIndex="-1"
+}
+
+         
+        </script>
+        <div id="artistprofile" onclick="profileclose()">
+            <img id="profile" width="200px" height="200px" src="anuprubens.jpg">
+            <span id="name">Anup Rubens</span>
+            <div id="details"><span style="font-size: xx-large;">"</span> He started his career in 2004 with the movie Jai.
+                In a career spanning close to two decades, he has associated with over fifty projects. 
+                 .He is one of the Renowned Telugu music composer.<span style="font-size: xx-large;">"</span> </div>
+             </div>
+        <div id="album" onclick="profileopen()"><img id="pic" width="700px" height="500px" src="manam.jpg"></div>
+     
+         <div id="top" style="background:rgb(36, 163, 63);">
+            <span style="display:inline-block;width: 100px;height:90px;box-shadow:0px 0px 15px 3px aqua;"><img id="artistalbum" src="manam.jpg" style="height:90px;width: 99px;"></span>
+            <span id="track-info-container">
+                
+                 <span id="amplitude-now-playing-title">MANAM</span><br><span id="amplitude-now-playing-artist">Anup Rubens</span>
+            </span>
+             <span  id="amplitude-play-pause" ><i onclick="song(); profileclose()"  class="far fa-play-circle fa-4x"> </i></span>
+                <span class="amplitude-prev"><i onclick="song1(); profileclose()" class="fas fa-backward fa-2x"></i></span>
+                <span class="amplitude-next"><i onclick="song2(); profileclose()" class="fas fa-forward fa-2x"></i></span> 
+                <span class="amplitude-shuffel"><i class="fas fa-random fa-2x"></i></span>
+                    <span class="amplitude-next"><i onclick="stop()" class="fas fa-stop fa-2x"></i></span>
+
+            <span id="time-info-container">
+                <span id="amplitude-current-time">0:00</span> / <span id="amplitude-audio-duration">0:00</span>
+            </span>  
+            <div id="amplitude-song-slider"><div id="amplitude-track-progress"></div></div>
+        
+        </div>
+        <audio id="s1"  ><source src="manam.mp3" type="audio/mp3"></audio>
+         <audio id="s2"  ><source src="nani.mp3" type="audio/mp3"></audio>
+        <audio id="s3"  ><source src="dhruva1.mp3" type="audio/mp3"></audio>
+
+   
+</body>
+</html>

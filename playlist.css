@@ -1,0 +1,161 @@
+
+i{color:wheat;}
+
+.amplitude-prev{top: -50px;
+           left: 350px;
+            position: relative;
+             display: inline-block;
+            cursor: pointer;       }
+.amplitude-next{position: relative;
+    top: -50px;
+    left:540px;
+    cursor: pointer;}
+.amplitude-shuffel{position: relative;
+        top: -50px;
+        left:200px;
+        cursor: pointer;}
+#album{
+    width:700px;
+    height:500px;
+    transform:translate(400px,40px);
+    box-shadow: 0 0 30px 10px rgb(162, 0, 255);
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+    cursor: pointer;
+}
+#artistprofile{
+    transform:translate(400px,40px);
+    width:700px;
+    height:500px;
+    display: inline-block;
+    position: absolute;
+    background-color:rgba(255, 255, 255, 0.685);
+     z-index: -1;
+ }
+#profile{
+     position: relative;
+    left:250px;
+    top:50px;
+     border-radius:100px;
+     background:repeating-linear-gradient();
+ }
+#name{
+    position: relative;
+    left:100px;
+    top:90px;
+    
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: crimson;
+    font-weight: bolder;
+}
+#details{
+   
+    position: relative;
+    top:110px;
+    left:100px;
+    width:500px;
+    height:170px;
+    font-size:x-large;
+    word-spacing:10px;
+    }
+#whole{
+  background-color: rgba(0, 0, 0, 0.795);
+} 
+
+
+#player{
+   
+    width: 1000px;
+    margin: auto;
+    
+    box-shadow: 1px 5px 5px #888888;
+}
+#top{
+    position:relative;
+    top:120px;
+    padding: 10px;
+    height:80px;
+  
+     left:30px;
+    width: 1450px;
+}
+
+#track-info-container{
+    bottom:30px;
+    position: relative;
+    display: inline-block;
+    font-size: 10px;
+    width: 170px;
+    height: 50px;
+    overflow: hidden;
+    margin-left: 10px;
+    
+}
+#time-info-container{
+    position: relative;
+     right: -920px;
+     bottom: 20px;
+    font-size: 10px;
+    display: inline-block;
+   
+}
+
+#amplitude-play-pause{
+    position: absolute;
+    left: 50%;
+    cursor: pointer;
+    
+}
+
+#amplitude-now-playing-artist{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 20px;
+    display:inline-block;
+    margin-top:6px;
+  
+   
+  
+}
+#amplitude-now-playing-title{
+   
+    
+    display: inline-block;
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 1px 1px gold;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: large;
+    
+    
+}
+#amplitude-current-time{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: large;
+}
+#amplitude-audio-duration{
+    font-size: medium;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+#amplitude-song-slider{
+    display: inline-block;
+    position: relative;
+    height: 10px;
+    border-radius: 5px;
+    width: 1200px;
+    background-color: rgba(237,237,237,.8);
+    left:150px;
+    top:-20px;
+    
+}
+#amplitude-track-progress{
+    
+    background-color: #fad52c;
+    height: 10px;
+    border-radius:5px;
+    width: 10px;
+}
+
+
